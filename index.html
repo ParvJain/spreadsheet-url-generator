@@ -2,7 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang=""> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,14 +23,14 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <br>
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-	<form>
+	<form onsubmit="return buildUrl()" action="">
 		<label>
 			select city:
-			<select id="city" onchange="cityChange()">
-			
-				<option value="1ORIcfTCEY7dCNH6165y8EaNwAJqGW3m2vRMsHwN4H4k">Chaing Mai</option>				<option value="1uXz_Om1m544g0CcEK1LZSi1jwlogdtzlH_wh2wQASiw">Bangkok</option>
+			<select id="city" onchange="return cityChange()">
+
+				<option value="1ORIcfTCEY7dCNH6165y8EaNwAJqGW3m2vRMsHwN4H4k">Chaing Mai</option>							<option value="1uXz_Om1m544g0CcEK1LZSi1jwlogdtzlH_wh2wQASiw">Bangkok</option>
 				<option value="18ecbDKPAxJcOQm7F0cjOUd6c8VhfKQoEbivpGnnr6e8">Ayutthaya</option>
 				<option value="1cll0bhzv0XfeD8xQkwQQ1NQSgIPxaLTXsA8xtwlSDuY">Chaing Rai</option>
 				<option value="1EvbR0I4fXMlBTco73guKg6_e3ANaafMk-vJnKqkGiIY">Hua Hin</option>
@@ -48,7 +49,7 @@
 			search string:
 			<input type="text" id="activityString" />
 		</label>
-		<input type="button" onclick="buildUrl()">
+		<input type="submit" >
 	</form>
 	<br><span id="link"></span>
         <script src="js/main.js"></script>
