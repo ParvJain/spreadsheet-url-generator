@@ -40,7 +40,7 @@ myApp.controller('myCtrl', ['$scope', 'fileUpload', function($scope, fileUpload)
         var file = $scope.myFile;
         console.log('file is ' );
         console.dir(file);
-        var uploadUrl = "http://hogwarts.ithaka.travel/files/upload";
+        var uploadUrl = "//hogwarts.ithaka.travel/files/upload";
         fileUpload.uploadFileToUrl(file, uploadUrl, function(response) {
         	$scope.imageUrl = response.data;
         });
