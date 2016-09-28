@@ -49,14 +49,15 @@ myApp.controller('myCtrl', ['$scope', 'fileUpload', function($scope, fileUpload)
 }]);
 </script>
 <body>
-
+<h2>STEP 1. Upload Image.</h2>
   <div ng-controller="myCtrl">
       <input type="file" file-model="myFile"/>
       <button ng-click="uploadFile()">upload me</button><br><br>
+      <h2 ng-show="imageUrl">STEP 2. COPY THIS IMAGE URL</h2>
       <span>{{ imageUrl }}</span><br><br>
-      <img ng-src="{{imageUrl + '/thumb'}}" />
+      <img ng-src="{{imageUrl + '/thumb'}}" width="200" /><br>
+      <h3 ng-show="imageUrl">STEP 3. Fill <a href="https://docs.google.com/spreadsheets/d/1bISaL40smNtMANmfmR2CoxUmIDCqlDG75xQatc6oSA0/edit#gid=0">this sheet</a></h3>
   </div>
-
 <!-- <script async src="http://jsfiddle.net/r4L6z0Lx/5/embed/html,result/"></script> -->
 </body>
 </html>
